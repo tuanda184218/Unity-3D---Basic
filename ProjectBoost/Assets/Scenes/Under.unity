@@ -217,10 +217,10 @@ GameObject:
   - component: {fileID: 666313270}
   - component: {fileID: 666313269}
   - component: {fileID: 666313268}
-  - component: {fileID: 666313272}
   - component: {fileID: 666313273}
   - component: {fileID: 666313274}
   - component: {fileID: 666313275}
+  - component: {fileID: 666313272}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -312,15 +312,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 666313267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72803f95371426442b0e9ad01de68cb4, type: 3}
+  m_Script: {fileID: 11500000, guid: 415997ca902d26940b03fc13fb439dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainThrust: 1900
-  RotationThrust: 80
-  mainEngine: {fileID: 8300000, guid: 5851823558af90644bd7651d34fccbf8, type: 3}
-  mainEngineParticles: {fileID: 1192703698}
-  leftThrusterParticles: {fileID: 0}
-  rightThrusterParticles: {fileID: 0}
+  levelLoadDelay: 2
+  success: {fileID: 8300000, guid: 8339df1e2e5f3ff4a97c1c34a8cbe839, type: 3}
+  crash: {fileID: 8300000, guid: 020c0b3f51ed3e549911b723f23d99fd, type: 3}
+  successParticles: {fileID: 1192703698}
+  crashParticles: {fileID: 1192703698}
 --- !u!54 &666313273
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -442,14 +441,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 666313267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 415997ca902d26940b03fc13fb439dd1, type: 3}
+  m_Script: {fileID: 11500000, guid: 72803f95371426442b0e9ad01de68cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelLoadDelay: 2
-  success: {fileID: 8300000, guid: 020c0b3f51ed3e549911b723f23d99fd, type: 3}
-  crash: {fileID: 8300000, guid: 8339df1e2e5f3ff4a97c1c34a8cbe839, type: 3}
-  successParticles: {fileID: 0}
-  crashParticles: {fileID: 0}
+  mainThrust: 1600
+  RotationThrust: 100
+  mainEngine: {fileID: 8300000, guid: 5851823558af90644bd7651d34fccbf8, type: 3}
+  mainEngineParticles: {fileID: 1192703698}
+  leftThrusterParticles: {fileID: 1192703698}
+  rightThrusterParticles: {fileID: 1192703698}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
